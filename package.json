@@ -1,18 +1,22 @@
 {
-	"name": "project-testing-bun",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "bunx playwright test",
-		"format": "bunx @biomejs/biome format --write ./src/*"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"@biomejs/biome": "1.5.3",
-		"@playwright/test": "^1.41.1",
-		"@types/node": "^20.11.10"
-	}
+  "name": "project-testing-bun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "bunx playwright test",
+    "format": "bunx @biomejs/biome format --write ./src/*",
+    "lint": "bunx biome check --apply ./src/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "@playwright/test": "~1.41.1",
+    "@types/node": "~20.11.10"
+  },
+  "dependencies": {
+    "lefthook": "~1.6.1"
+  }
 }
