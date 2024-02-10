@@ -12,6 +12,9 @@
       },
       "style": {
         "noVar": "warn"
+      },
+      "correctness": {
+        "noUnusedVariables": "error"
       }
     }
   },
