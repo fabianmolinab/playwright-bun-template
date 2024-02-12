@@ -6,7 +6,8 @@
   "scripts": {
     "test": "bunx playwright test",
     "format": "bunx @biomejs/biome format --write ./src/*",
-    "lint": "bunx biome check --apply ./src/*"
+    "lint": "bunx biome check --apply ./src/*",
+    "check-types": "tsc --noEmit --project tsconfig.json"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +15,8 @@
   "devDependencies": {
     "@biomejs/biome": "1.5.3",
     "@playwright/test": "~1.41.1",
-    "@types/node": "~20.11.10"
+    "@types/node": "~20.11.10",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "lefthook": "~1.6.1"

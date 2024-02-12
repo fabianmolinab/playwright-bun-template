@@ -1,4 +1,5 @@
 {
+ "include": ["src/**/*.ts" ],
   "compilerOptions": {
     // enable latest features
     "lib": ["ESNext"],
@@ -14,6 +15,7 @@
 
     // Best practices
     "strict": true,
+    "noImplicitAny": true,   
     "skipLibCheck": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
