@@ -10,6 +10,7 @@
             "complexity": {
                 "noUselessFragments": "warn"
             },
+            "correctness": { "noUnusedVariables": "error" },
             "style": {
                 "useSingleVarDeclarator": "error",
                 "noParameterAssign": "off",
@@ -35,7 +36,8 @@
     },
     "javascript": {
         "formatter": {
-            "semicolons": "asNeeded"
+            "semicolons": "asNeeded",
+            "quoteStyle": "single"
         }
     }
 }
