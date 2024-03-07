@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test'
 
 test.describe('navigate between the different options on the page', () => {
     const selectors = {
-        //const linkSuscripciones = '#navbarStickyDesktop'
+        linkSuscripciones: '#navbarStickyDesktop',
         xpathSuscripciones: '//*[@id="navbarStickyDesktop"]',
     }
 
@@ -19,7 +19,7 @@ test.describe('navigate between the different options on the page', () => {
         await test.step('a user click on subscriptions and valid page "subscripciones"', async () => {
             //const linkSuscripciones = '#navbarStickyDesktop'
             const getSuscripcions = page
-                .locator(selectors.xpathSuscripciones)
+                .locator(selectors.linkSuscripciones)
                 .getByRole('link', {
                     name: 'Suscripciones',
                 })
