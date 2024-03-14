@@ -8,7 +8,7 @@ test.describe('navigate between the different options on the page', () => {
 
     test('check the different subscriptions', async ({ page }) => {
         await test.step('user enters the page "latiendadelcafe" ', async () => {
-            await page.goto('/')
+            await page.goto('https://latiendadelcafe.co/')
 
             const titleHomePage =
                 'El mejor café Colombiano online | La Tienda del Café'
